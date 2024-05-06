@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Trying to learn the set interval process
+    </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        let start = document.querySelector("#start");
+        let stop = document.querySelector("#stop");
+        let check;
+
+        start.addEventListener('click',()=>{
+            check=setInterval(()=>{
+                console.log("My name is sarba")
+            },2000);
+        })
+
+        stop.addEventListener('click',()=>{
+            clearInterval(check);
+        })
+    </script>
+</body>
+</html>
